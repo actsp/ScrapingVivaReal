@@ -332,7 +332,9 @@ with st.container(border=True):
     with coluna12:
         st.write(" ")
         
-    path = f"https://www.vivareal.com.br/venda/sp/{cidade}/apartamento_residencial/{OPTcomodos}/#com=salao-de-festas,sacada&onde=Brasil,S%C3%A3o%20Paulo,{Cidade}%C3%AD,,,,,,BR%3ESao%20Paulo%3ENULL%3E{Cidade},,,&ordenar-por=preco:ASC&{quartos}&{vagas}"
+    #path = f"https://www.vivareal.com.br/venda/sp/{cidade}/apartamento_residencial/{OPTcomodos}/#com=salao-de-festas,sacada&onde=Brasil,S%C3%A3o%20Paulo,{Cidade}%C3%AD,,,,,,BR%3ESao%20Paulo%3ENULL%3E{Cidade},,,&ordenar-por=preco:ASC&{quartos}&{vagas}"
+    path = f"https://www.vivareal.com.br/venda/sp/{cidade}/apartamento_residencial/{OPTcomodos}/#onde=Brasil,S%C3%A3o%20Paulo,{Cidade}%C3%AD,,,,,,BR%3ESao%20Paulo%3ENULL%3E{Cidade},,,&preco-ate={ValorMaximoBusca}&preco-desde={ValorMinimoBusca}&{quartos}&{vagas}"
+
     txtURL = st.text_input("Raspar a URL:", path)
     if txtURL:
         url = txtURL  
