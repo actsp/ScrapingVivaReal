@@ -1,0 +1,12 @@
+cloudscraper
+googlemaps
+streamlit-folium
+plotly-express
+streamlit-card
+babel
+folium
+pandas
+streamlit
+requests
+beautifulsoup4
+numpy

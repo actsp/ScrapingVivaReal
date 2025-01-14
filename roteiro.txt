@@ -1,0 +1,7 @@
+conda create --name scraping python=3.13.1
+conda activate scraping 
+conda update --all
+
+pip3 install -r requirements.txt 
+ou 
+python -m pip install -r requirements.txt
